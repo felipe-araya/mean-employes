@@ -3,7 +3,8 @@ const mongoose = require('mongoose');
 mongoose
     .connect("mongodb://Localhost/mean-emploees",{
         useUnifiedTopology: true,
-        useNewUrlParser: true
+        useNewUrlParser: true,
+        useFindAndModify: false
 
     })
     .then((db) => console.log("Db is connected"))

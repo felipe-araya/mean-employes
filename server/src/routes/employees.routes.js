@@ -9,8 +9,8 @@ router.post ('/', employeesCtrl.createEmployee);
 
 router.get ('/:id', employeesCtrl.getEmployee);
 
-router.put ('/', employeesCtrl.editEmployee);
+router.put ('/:id', employeesCtrl.editEmployee);
 
-router.delete ('/', employeesCtrl.deleteEmployee);
+router.delete ('/:id', employeesCtrl.deleteEmployee);
 
 module.exports = router
