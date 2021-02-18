@@ -24,5 +24,10 @@ export class EmployeeComponent implements OnInit {
      )
 
   }
+  deleteEmployee() {
+    console.log('hola')
+
+
+  }
 
 }

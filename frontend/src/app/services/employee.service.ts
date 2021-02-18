@@ -6,16 +6,28 @@ import { Employee } from '../models/employee'
   providedIn: 'root'
 })
 export class EmployeeService {
-  
+
   URL_API = 'http://localhost:4000/api/employees'
 
   employees: Employee[];
 
   constructor(private http: HttpClient) { }
 
-  getEmployees(){
+  getEmployees() {
 
     return this.http.get<Employee[]>(this.URL_API);
-    
+
   }
+  pushEmployee() {
+
+
+
+  }
+  deleteEmployee() {
+    this.http.delete<Employee[]>(this.URL_API);
+
+
+
+  }
+  
 }
